@@ -1,5 +1,8 @@
 import { useState } from "react";
+import Markdown from "markdown-to-jsx";
 import ReactMarkdown from 'react-markdown'
+
+import { PreBlock } from "../SyntaxHighlighter";
 
 import { Container } from "./styles";
 
@@ -19,7 +22,15 @@ const InputWrite = () => {
         />
       </div>
       <div className="showMarked">
-        <ReactMarkdown>{inputMarked}</ReactMarkdown>
+        <Markdown
+          options={{
+            overrides: {
+              pre: PreBlock,
+            },
+          }}
+        >
+          {inputMarked}
+        </Markdown>
       </div>
     </Container>
   );

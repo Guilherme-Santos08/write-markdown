@@ -34,16 +34,5 @@ export const Container = styled.div`
 
     width: 50vw;
     min-height: 100vh;
-
-    pre code {
-      display: block;
-      background: none;
-      white-space: pre;
-      -webkit-overflow-scrolling: touch;
-      overflow-x: scroll;
-      max-width: 100%;
-      min-width: 100px;
-      padding: 0;
-    }
   }
 `;
