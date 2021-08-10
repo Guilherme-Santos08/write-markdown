@@ -1,5 +1,6 @@
-import marked from "marked";
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown'
+
 import { Container } from "./styles";
 
 const InputWrite = () => {
@@ -7,8 +8,6 @@ const InputWrite = () => {
   const handleChange = (e) => {
     setInputMarked(e.target.value);
   };
-  var md = window.markdownit();
-  var result = md.render("# markdown-it rulezz!");
 
   return (
     <Container>
@@ -20,7 +19,7 @@ const InputWrite = () => {
         />
       </div>
       <div className="showMarked">
-        {result}
+        <ReactMarkdown>{inputMarked}</ReactMarkdown>
       </div>
     </Container>
   );
