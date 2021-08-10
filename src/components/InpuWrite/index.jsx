@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Markdown from "markdown-to-jsx";
-import ReactMarkdown from 'react-markdown'
 
 import { PreBlock } from "../SyntaxHighlighter";
 
@@ -16,6 +15,7 @@ const InputWrite = () => {
     <Container>
       <div className="writeInput">
         <textarea
+          spellcheck="false"
           placeholder="Escreva aqui"
           onChange={handleChange}
           value={inputMarked}
