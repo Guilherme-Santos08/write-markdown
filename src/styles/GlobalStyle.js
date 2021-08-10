@@ -11,5 +11,6 @@ export default createGlobalStyle`
     color: white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
 `;
