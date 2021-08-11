@@ -16,6 +16,7 @@ Usamos bastante o markdown para fazer README no github, então porque não criar
 ## 🚀 Tecnologias
 * ReactJs
 * Styled-Components
+* SyntaxHighlighter
 
 ## Live
 * https://guilherme-santos08.github.io/write-markdown/
